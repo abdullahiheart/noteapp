@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:noteapp/views/add_note_bottom_sheet.dart';
+import 'package:noteapp/views/widget/add_note_bottom_sheet.dart';
 
 import 'widget/note_view_body.dart';
 
