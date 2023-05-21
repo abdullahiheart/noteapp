@@ -5,21 +5,25 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'custom_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
-
+  const CustomAppBar({super.key, required this.title, required this.icon});
+  final String title;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          'Noteapp',
-          style: TextStyle(
+          'Notes',
+          style: const TextStyle(
             fontSize: 28,
             color: Colors.white,
           ),
         ),
-        Spacer(),
-        CustomSearchIcon(),
+        // Spacer(),
+        CustomIcon(
+          icon: icon,
+        ),
       ],
     );
   }
