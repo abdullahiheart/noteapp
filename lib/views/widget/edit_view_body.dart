@@ -14,7 +14,7 @@ class EditNoteViewBody extends StatelessWidget {
         horizontal: 24,
       ),
       child: Column(
-        children:const   [
+        children: const [
           SizedBox(
             height: 50,
           ),
@@ -22,17 +22,17 @@ class EditNoteViewBody extends StatelessWidget {
             title: 'Edir Note',
             icon: Icons.check,
           ),
-         SizedBox(
+          SizedBox(
             height: 50,
           ),
           CustomTextField(hint: 'Title'),
           SizedBox(
             height: 20,
           ),
-          CustomTextField(hint: 'Content',
-          maxLines: 5,
+          CustomTextField(
+            hint: 'Content',
+            maxLines: 5,
           )
-
         ],
       ),
     );
